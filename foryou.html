@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Happy Valentine's Day </title>
+</head>
+<body style="text-align:center; margin-top:100px; font-family:Arial;">
+<h3>Wpisz hasło</h3>
+<h5> (moja nazwa na instagramie) </h5>
+<input type="password" id="jakasnazwa">
+<button onclick="check()"> Otwórz</button>
+
+
+<script>
+function check() {
+var correct = "iamsasza"; //haslo
+var user = document.getElementById("jakasnazwa").value;
+if (user===correct){
+//document.getElementById("sekret").style.display = "block";
+window.location.href="for_you.html";}
+else {
+alert("Złe hasło"); }
+}
+</script>
+</body>
+</html>
